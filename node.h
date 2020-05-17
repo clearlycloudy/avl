@@ -3,8 +3,6 @@
 
 #include "tree.h"
 
-#define ON_BALANCE
-
 class Node {
 public:
     

@@ -121,7 +121,6 @@ Node * Node::remove(Tree & t){
     return del;
 }
 void Node::insert_rebalance(Tree & t){
-#ifdef ON_BALANCE
     //current node is assume to have increased height by 1
     Node * par = this->p;
     if(par){
@@ -167,7 +166,6 @@ void Node::insert_rebalance(Tree & t){
 	}else
 	    t.root = n;
     }
-#endif
 }
 
 Node * Node::rotate_left(Node * par, Node * cur, bool apply_rebalance){
